@@ -1,0 +1,24 @@
+<%# Calling a Page To Show the landing page %>
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Gossip World</h1>
+    <p>Si tu souhaite créer un nouveau gossip clique ci-dessous</p>
+    <a href="/gossips/new/">Créer un nouveau potin</a>
+    <br>
+    <hr>
+    <h2>Listes des potins disponibles !</h2>
+    <hr>
+    <% gossips.each_with_index do |gossip, id| %> <%# Creation of a loop %>
+        <p>
+          <p>Gossip n°<%= id %></p>
+          <%= gossip.author %><br/>
+          <%= gossip.content %><br>
+          <a href="/gossips/<%=id%>/">Lire le potin</a> <%# Creating the new links %>
+          <hr>
+        </p>
+      <% end %>
+  </body>
+</html>

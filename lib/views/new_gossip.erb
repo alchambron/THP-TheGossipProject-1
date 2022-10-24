@@ -1,0 +1,17 @@
+<%# Creating of the page for a new gossip %>
+<html>
+  <head>
+    <title>Créer un potin</title>
+  </head>
+  <body>
+    <h1>Créer un potin !</h1>
+    <hr>
+    <p>Balance ton potin via ce formulaire !</p>
+    <form action='/gossips/new/' method='POST'>
+      Saisi ici ton nom :  <input type='text' name='gossip_author'/><br/><br>
+      Balance ton potin : <input type='text' name='gossip_content'/><br/><br>
+      <input type='submit'/>
+    </form>
+    <a href="/"><button>Retour</button></a>
+  </body>
+</html>
