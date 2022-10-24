@@ -2,7 +2,7 @@
 
 ## The Gossip Project
 The Gossip Project is a project of a website to be able to publish a gossip about someone.  
-The Objectives is to learn how to use Sinatra, and multiples gems likes Rack or Puma.
+The Objectives is to learn how to use Sinatra, and multiples gems likes Sinatra, Rack or Puma.
 
 The app actually able a user to create a gossip, publish it, and make it possible to see it in details.
 
